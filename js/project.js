@@ -9,7 +9,8 @@ define(['jquery', 'slick', 'slimscroll', 'styler'], function(){
     $cols.height(maxH);
   };
 
-$('input').styler();
+
+
 });
 
 
