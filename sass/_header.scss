@@ -1,0 +1,37 @@
+header {
+  background: url(img/bckg-texture.png);
+}
+
+.head {
+  @include clearfix;
+  padding-top: 62px;
+  &__logo {
+    float: left;
+  }
+  &__nav {
+    float: left;
+  }
+  &__contact {
+    padding-top: 18px;
+    float: right;
+    text-align: right;
+  }
+}
+
+.head-title {
+  text-align: center;
+  overflow: auto;
+  &__first {
+    font: normal 60px/55px $serif;
+    margin-top: 163px;
+  }
+  &__second {
+    font: normal 24px/55px $roboto;
+    text-transform: uppercase;
+    margin-top: 118px;
+  }
+  &__fourth {
+    font: normal 38px/48px $serif;
+    margin: 100px 0;
+  }
+}

@@ -1,0 +1,17 @@
+.main-menu {
+  display: table;
+  height: 67px;
+  width: 630px;
+  text-align: center;
+  margin-left: 10px;
+  &__item {
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 0 15px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $black;
+    font-size: 18px;
+  }
+}

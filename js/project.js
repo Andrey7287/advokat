@@ -1,4 +1,4 @@
-define(['jquery', 'slick', 'slimscroll', 'styler'], function(){
+define(['jquery', 'slick', 'scroll', 'styler'], function(){
 
   $.fn.ravno = function () {
     var maxH = -1;
@@ -9,7 +9,10 @@ define(['jquery', 'slick', 'slimscroll', 'styler'], function(){
     $cols.height(maxH);
   };
 
-
+  $('#practic-wrapp').mCustomScrollbar({
+    axis:"x",
+    theme:"dark"
+  });
 
 });
 

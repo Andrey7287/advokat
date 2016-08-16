@@ -3,14 +3,14 @@ requirejs.config({
   baseUrl: 'node_modules/',
   shim: {
     'slick': ['jquery'],
-    'slimscroll': ['jquery'],
+    'scroll': ['jquery'],
     'styler': ['jquery']
   },
   paths: {
     'jquery': 'jquery/dist/jquery.min',
     'slick': 'slick-carousel/slick/slick.min',
     'fancybox': 'jquery-fancybox/source/js/jquery.fancybox.pack',
-    'slimscroll': 'jquery-slimscroll/jquery.slimscroll.min',
+    'scroll': 'malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min',
     'styler': 'jquery.formstyler/jquery.formstyler.min'
   }
 });

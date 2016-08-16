@@ -1,0 +1,56 @@
+body {
+  font: normal 16px/24px $roboto;
+  color: $default;
+}
+h1, .h1 {
+  font: 300 60px/64px $roboto;
+  margin: 0;
+  color: $soft;
+}
+h2, .h2 {
+  font: normal 36px/42px $serif;
+  margin: 0;
+  color: $black;
+}
+a {
+  color: $default;
+  &:hover {
+    color: $soft;
+    text-decoration: none;
+  }
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.content-wrapp,
+.container {
+  overflow: auto;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+.mod{
+  padding: 55px 0;
+  &--scroll {
+    padding: 55px 0 0;
+  }
+  &:nth-child(even){
+    background: url(img/bckg-texture.png);
+  }
+}
+
+p{
+  font: 300 20px/30px $roboto;
+}
+
+.list-title {
+  font: normal 26px/42px $serif;
+  color: $black;
+  margin: 25px 0;
+}
+#tmp {
+  overflow: hidden;
+  height: 300px;
+}

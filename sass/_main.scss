@@ -1,1 +1,98 @@
+.presentation {
+  display: table;
+  width: 100%;
+  height: 90px;
+  &__item {
+    display: table-cell;
+    vertical-align: middle;
+    span {
+      display: table-cell;
+      vertical-align: bottom;
+    }
+    .mark {
+      font: normal 54px/55px $serif;
+      padding-right: 7px;
+      text-transform: uppercase;
+      color: $soft;
+    }
+    .txt {
+      font: normal 18px/18px $roboto;
+    }
+  }
+}
 
+
+@mixin includePict($num: 1){
+  background: url("img/left-icon-0"+$num+".png") 0 50% no-repeat;
+}
+.activity {
+  &__item {
+    padding: 13px 0 13px 135px;
+    @include includePict;
+    &:nth-child(2){
+      @include includePict(2);
+    }
+    &:nth-child(3){
+      @include includePict(3);
+    }
+    &:nth-child(4){
+      @include includePict(4);
+    }
+    &:nth-child(5){
+      @include includePict(5);
+    }
+    &:nth-child(6){
+      @include includePict(6);
+    }
+  }
+
+  &__title {
+    font: 300 20px/36px $roboto;
+    color: $black;
+    text-transform: uppercase;
+  }
+}
+
+/*- Scrolling content */
+/*--+ Scrolling content layout */
+.practic {
+  display: table;
+  &__item {
+    display: table-cell;
+    padding-right: 10px;
+    background: url(img/bckg-card.jpg) 0 0 no-repeat;
+  }
+}
+/*--+ Scrolling content card */
+#practic-wrapp{
+  margin: 28px 0;
+}
+.card {
+  position: relative;
+  &__inner {
+    position: absolute;
+    top:0;
+    left:0;
+    color: $black;
+    font: normal 16px/18px $serif;
+    text-align: center;
+    padding: 107px 10px 20px 10px;
+  }
+  &__title,
+  &__money{
+    font: normal 20px/20px $serif;
+  }
+  &__txt {
+    color: $soft;
+    &--com {
+      margin: 5px 0;
+      height: 100px;
+    }
+  }
+  &__rezult,
+  &__money {
+    text-transform: uppercase;
+  }
+
+
+}
